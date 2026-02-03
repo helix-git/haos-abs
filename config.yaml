@@ -21,7 +21,7 @@ map:
   - config:rw
   - media:rw
   - share:rw
-apparmor: true
+apparmor: false
 options:
   metadata_path: /share/audiobookshelf/metadata
 schema:
