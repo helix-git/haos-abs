@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.7](https://github.com/helix-git/haos-abs/compare/v1.1.6...v1.1.7) (2026-02-03)
+
+
+### Bug Fixes
+
+* Clear ROUTER_BASE_PATH for Ingress compatibility ([a45ceb1](https://github.com/helix-git/haos-abs/commit/a45ceb1fd8dd91b4a1eff8954611be7d44a98e47))
+* Set ROUTER_BASE_PATH=/audiobookshelf for Ingress subfolder ([49f9010](https://github.com/helix-git/haos-abs/commit/49f9010a6b1745d0f41393c941ed439b92f784ae))
+
 ## [1.1.6](https://github.com/helix-git/haos-abs/compare/v1.1.5...v1.1.6) (2026-02-03)
 
 
