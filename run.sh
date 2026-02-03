@@ -11,8 +11,10 @@ mkdir -p "${METADATA_PATH}"
 export PORT=13378
 export CONFIG_PATH=/config
 export METADATA_PATH="${METADATA_PATH}"
+export NODE_ENV=production
 
 bashio::log.info "Metadata: ${METADATA_PATH}"
 bashio::log.info "Media available at /media"
 
-exec tini -- node /app/index.js
+cd /app
+exec tini -- node index.js
