@@ -24,10 +24,6 @@ map:
 apparmor: true
 options:
   metadata_path: /share/audiobookshelf/metadata
-  library_paths:
-    - /media
 schema:
   metadata_path: str
-  library_paths:
-    - str
 startup: application
