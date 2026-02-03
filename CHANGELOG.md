@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/helix-git/haos-abs/compare/v1.0.0...v1.1.0) (2026-02-03)
+
+
+### Features
+
+* Enable dispatch notification to haos-apps ([dfef1f5](https://github.com/helix-git/haos-abs/commit/dfef1f5507e9638d658a36529284201f2a8a377f))
+
+
+### Bug Fixes
+
+* Permission denied - use chmod a+x and simplify config ([08095a8](https://github.com/helix-git/haos-abs/commit/08095a8b16d71f9bf6f35dd892f363b489878b65))
+
 ## 1.0.0 (2026-02-03)
 
 
