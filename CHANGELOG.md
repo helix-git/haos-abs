@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.4](https://github.com/helix-git/haos-abs/compare/v1.1.3...v1.1.4) (2026-02-03)
+
+
+### Bug Fixes
+
+* Use /data/options.json instead of Supervisor API ([db4afd5](https://github.com/helix-git/haos-abs/commit/db4afd563d0843cb5c671e764740773c1b775768))
+
 ## [1.1.3](https://github.com/helix-git/haos-abs/compare/v1.1.2...v1.1.3) (2026-02-03)
 
 
