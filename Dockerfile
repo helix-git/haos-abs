@@ -11,16 +11,11 @@ FROM ${BUILD_FROM}
 RUN apk add --no-cache \
     nodejs \
     npm \
-    ffmpeg \
     tini \
     tzdata
 
 # Copy ABS from official image
 COPY --from=abs-source /app /app
-COPY --from=abs-source /usr/local/lib/nusqlite3 /usr/local/lib/nusqlite3
-
-ENV NUSQLITE3_DIR="/usr/local/lib/nusqlite3"
-ENV NUSQLITE3_PATH="/usr/local/lib/nusqlite3/libnusqlite3.so"
 
 WORKDIR /app
 
