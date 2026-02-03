@@ -19,7 +19,7 @@ export CONFIG_PATH=/data
 export METADATA_PATH="${METADATA_PATH}"
 export NODE_ENV=production
 export SOURCE=docker
-export ROUTER_BASE_PATH=""
+export ROUTER_BASE_PATH="/audiobookshelf"
 
 echo "[INFO] Config/DB: /data"
 echo "[INFO] Metadata: ${METADATA_PATH}"
