@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/helix-git/haos-abs/compare/v1.1.2...v1.1.3) (2026-02-03)
+
+
+### Bug Fixes
+
+* Disable AppArmor for debugging ([e6b01cd](https://github.com/helix-git/haos-abs/commit/e6b01cd19af5fdb378cecc4cb47dfacbdab1c8f2))
+
 ## [1.1.2](https://github.com/helix-git/haos-abs/compare/v1.1.1...v1.1.2) (2026-02-03)
 
 
