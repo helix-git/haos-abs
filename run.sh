@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 set -e
 
-source /usr/lib/bashio/bashio.sh
+# Options are in /data/options.json
+CONFIG_PATH=/data/options.json
 
-bashio::log.info "Starting Audiobookshelf..."
+echo "[INFO] Starting Audiobookshelf..."
 
-METADATA_PATH=$(bashio::config 'metadata_path')
+# Read config using jq
+METADATA_PATH=$(jq -r '.metadata_path // "/share/audiobookshelf/metadata"' "$CONFIG_PATH")
 mkdir -p "${METADATA_PATH}"
 
 export PORT=13378
@@ -13,8 +15,8 @@ export CONFIG_PATH=/config
 export METADATA_PATH="${METADATA_PATH}"
 export NODE_ENV=production
 
-bashio::log.info "Metadata: ${METADATA_PATH}"
-bashio::log.info "Media available at /media"
+echo "[INFO] Metadata: ${METADATA_PATH}"
+echo "[INFO] Media available at /media"
 
 cd /app
 exec tini -- node index.js
