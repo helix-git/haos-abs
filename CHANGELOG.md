@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/helix-git/haos-abs/compare/v1.1.0...v1.1.1) (2026-02-03)
+
+
+### Bug Fixes
+
+* Multi-stage build with HA base image + auto-update workflow ([6db3925](https://github.com/helix-git/haos-abs/commit/6db3925a8f383cdce452b7299d96073104299603))
+
 ## [1.1.0](https://github.com/helix-git/haos-abs/compare/v1.0.0...v1.1.0) (2026-02-03)
 
 
