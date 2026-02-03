@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.6](https://github.com/helix-git/haos-abs/compare/v1.1.5...v1.1.6) (2026-02-03)
+
+
+### Bug Fixes
+
+* Use /data for ABS database (always available) ([da5fe9a](https://github.com/helix-git/haos-abs/commit/da5fe9aab0ff9a4a4602dfae976464f68c9d1629))
+
 ## [1.1.5](https://github.com/helix-git/haos-abs/compare/v1.1.4...v1.1.5) (2026-02-03)
 
 
