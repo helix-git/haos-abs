@@ -1,0 +1,62 @@
+#include <tunables/global>
+
+profile audiobookshelf flags=(attach_disconnected,mediate_deleted) {
+  #include <abstractions/base>
+
+  # Capabilities
+  capability chown,
+  capability dac_override,
+  capability dac_read_search,
+  capability fowner,
+  capability fsetid,
+  capability kill,
+  capability setgid,
+  capability setuid,
+  capability net_bind_service,
+
+  # S6-Overlay and Bashio
+  /init ix,
+  /bin/** ix,
+  /usr/bin/** ix,
+  /usr/lib/bashio/** ix,
+  /etc/s6/** ix,
+  /run/s6/** ix,
+  /etc/services.d/** rwix,
+  /etc/cont-init.d/** rwix,
+
+  # Node.js / Audiobookshelf
+  /app/** r,
+  /app/index.js ix,
+  /usr/local/bin/node ix,
+  /usr/bin/tini ix,
+
+  # Config directory
+  /config/** rw,
+
+  # Media directory (audiobooks, podcasts)
+  /media/** rw,
+
+  # Share directory (metadata storage)
+  /share/** rw,
+
+  # Temporary files
+  /tmp/** rw,
+  /run/** rw,
+
+  # Data directory (add-on options)
+  /data/** r,
+
+  # Proc filesystem
+  @{PROC}/@{pid}/fd/ r,
+  @{PROC}/@{pid}/fdinfo/* r,
+
+  # Network access
+  network inet stream,
+  network inet6 stream,
+  network inet dgram,
+  network inet6 dgram,
+
+  # Deny unnecessary access
+  deny /root/** rw,
+  deny /home/** rw,
+}

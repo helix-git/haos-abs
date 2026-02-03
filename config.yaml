@@ -1,0 +1,33 @@
+name: Audiobookshelf
+version: 0.1.0
+slug: audiobookshelf
+description: Self-hosted audiobook and podcast server
+url: https://github.com/helix-git/haos-abs
+arch:
+  - aarch64
+  - amd64
+image: ghcr.io/helix-git/haos-abs/{arch}
+init: false
+ingress: true
+ingress_port: 13378
+ingress_stream: true
+panel_icon: mdi:book-music
+panel_title: Audiobookshelf
+ports:
+  13378/tcp: null
+ports_description:
+  13378/tcp: Audiobookshelf (for mobile apps, optional)
+map:
+  - config:rw
+  - media:rw
+  - share:rw
+apparmor: true
+options:
+  metadata_path: /share/audiobookshelf/metadata
+  library_paths:
+    - /media
+schema:
+  metadata_path: str
+  library_paths:
+    - str
+startup: application
