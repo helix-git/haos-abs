@@ -19,6 +19,7 @@ export CONFIG_PATH=/data
 export METADATA_PATH="${METADATA_PATH}"
 export NODE_ENV=production
 export SOURCE=docker
+export ROUTER_BASE_PATH=""
 
 echo "[INFO] Config/DB: /data"
 echo "[INFO] Metadata: ${METADATA_PATH}"
