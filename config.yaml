@@ -1,5 +1,5 @@
 name: Audiobookshelf
-version: 0.1.0
+version: 1.0.0
 slug: audiobookshelf
 description: Self-hosted audiobook and podcast server
 url: https://github.com/helix-git/haos-abs
