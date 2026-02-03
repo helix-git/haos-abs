@@ -18,7 +18,6 @@ ports:
 ports_description:
   13378/tcp: Audiobookshelf (for mobile apps, optional)
 map:
-  - config:rw
   - media:rw
   - share:rw
 apparmor: false
